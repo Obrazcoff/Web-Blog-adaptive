@@ -221,17 +221,21 @@ padding-bottom: 20px;
   margin-bottom: 50px;
 }
 
-.main_work{
+.main__work{
   text-align: center;
-  padding: 100px 0 100 pc;
+  padding: 100px 0 100px;
 }
 
-.main_work h1{
+.main__work h1{
   font-size: 
 } 
 
-.main_work p{
+.main__work p{
   margin-bottom: 175px;
+  color: #6c6c6c;
+}
+.main__work img:hover{
+  opacity: 0.9;
 }
 
 
@@ -314,5 +318,14 @@ padding-bottom: 20px;
   }
   .services__cards{
     grid-template-columns: auto;
-  }  
+  }
+  .line1 img:not(:first-child){
+    display: none;
+  }
+  .line2 img:not(:first-child){
+    display: none;
+  }
+  .line3 img:not(:first-child){
+    display: none;
+  }
 }
