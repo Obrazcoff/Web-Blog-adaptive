@@ -203,6 +203,41 @@ padding-bottom: 20px;
   margin-left: 30px;
 }
 
+.main__testimonials{
+  background: #000;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 170px;
+}
+
+.main__testimonials h1{
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.main__testimonials .testimonials{
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.main_work{
+  text-align: center;
+  padding: 100px 0 100 pc;
+}
+
+.main_work h1{
+  font-size: 
+} 
+
+.main_work p{
+  margin-bottom: 175px;
+}
+
+
+
+
+
 @media screen and (max-width: 1200px) {
   nav{
     margin-left: 20%;
