@@ -74,6 +74,10 @@ main .main__welcome h1{
   font-size: 44px;
 }
 
+main .main__welcome h1:after{
+  display: none;
+}
+
 .webcompany{
   color: #fcac45;
 }
@@ -96,6 +100,10 @@ main .main__about{
 display: inline-block;
 border-bottom: 3px solid #fcac45;
 padding-bottom: 20px;
+}
+
+.about__right h1::after{
+  display: none;
 }
 
 .about__right p{
@@ -124,15 +132,6 @@ padding-bottom: 20px;
 .main__team h1{
   font-size: 44px;
   padding-bottom: 30px;
-}
-
-.line{
-  width: 100px;
-  height: 3px;
-  background: #fcac45;
-  position: relative;
-  left: 45.5%;
-  margin-bottom: 85px;
 }
 
 .photo{
@@ -306,6 +305,36 @@ input[type=submit] {
   margin-top: 20px;
 }
 
+h1:after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  padding-top: 30px;
+  border-bottom: 3px solid #fcac45;
+}
+
+footer{
+  height: 100%;
+  width: auto;
+  background: #222222;
+  padding: 30px 0 30px 0;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+}
+
+.social img{
+  margin-left: 12px;
+}
+
+.social img:hover{
+  opacity: 0.6;
+}
+
+
 @media screen and (max-width: 1200px) {
   nav{
     margin-left: 20%;
@@ -366,6 +395,7 @@ input[type=submit] {
   .main__about{
     flex-direction: column;
   }
+
   .about__right{
     text-align: center;
     margin-left: 0;
@@ -377,12 +407,15 @@ input[type=submit] {
     margin-top: 10px;
     font-size: 20px;
   }
+
   .team__cards{
     flex-direction: column;
   }
+
   .services__cards{
     grid-template-columns: auto;
   }
+
   .line1 img:not(:first-child){
     display: none;
   }
@@ -392,4 +425,13 @@ input[type=submit] {
   .line3 img:not(:first-child){
     display: none;
   }
+
+  .contact__wrapper{
+    width: 76%;
+    margin: 0 auto;
+  }
+  .form__inputs{
+    flex-direction: column;
+  }
+
 }
